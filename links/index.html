@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Marina França · Camuflagem de Cicatrizes e Estrias</title>
+<meta name="description" content="Dermopigmentação paramédica em São Paulo. Camuflagem de cicatrizes, estrias, manchas e reconstrução de aréola com avaliação individualizada. Fale com a Marina pelo WhatsApp.">
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#1b1411">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Marina França · Camuflagem de Cicatrizes e Estrias">
+<meta property="og:description" content="Dermopigmentação paramédica com avaliação individualizada. Agende pelo WhatsApp.">
+<meta property="og:url" content="https://marinacamuflagem.com.br/links/">
+<meta property="og:image" content="https://marinacamuflagem.com.br/links/og.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- ============================================================
+     META PIXEL
+     Troque SEU_PIXEL_ID pelo ID do pixel da conta de anúncios.
+     Eventos disparados: PageView (carregamento) e Contact (clique no WhatsApp).
+     ============================================================ -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+window.META_PIXEL_ID = 'SEU_PIXEL_ID';
+if (window.META_PIXEL_ID && window.META_PIXEL_ID !== 'SEU_PIXEL_ID') {
+  fbq('init', window.META_PIXEL_ID);
+  fbq('track', 'PageView');
+}
+</script>
+
+<style>
+:root{
+  --bg:#1b1411;
+  --bg-2:#241a16;
+  --card:rgba(255,255,255,.045);
+  --card-border:rgba(255,255,255,.09);
+  --text:#f4ece6;
+  --muted:#b9a99f;
+  --gold:#c9a37c;
+  --gold-2:#e2c4a0;
+  --wa:#25d366;
+  --wa-dark:#1da851;
+  --radius:18px;
+  --shadow:0 18px 50px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  min-height:100dvh;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+/* fundo com luz quente */
+body::before{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(60% 40% at 50% -5%, rgba(201,163,124,.28), transparent 70%),
+    radial-gradient(50% 35% at 100% 100%, rgba(226,196,160,.10), transparent 70%),
+    linear-gradient(180deg,var(--bg) 0%,var(--bg-2) 100%);
+}
+a{color:inherit;text-decoration:none}
+
+.wrap{
+  width:100%;max-width:460px;margin:0 auto;
+  padding:28px 16px calc(96px + env(safe-area-inset-bottom));
+}
+
+/* ---------- header ---------- */
+.header{text-align:center;padding-top:8px}
+.avatar{
+  width:112px;height:112px;border-radius:50%;margin:0 auto 16px;
+  padding:3px;
+  background:linear-gradient(135deg,var(--gold-2),var(--gold) 50%,#8a6a4b);
+  box-shadow:0 10px 30px rgba(201,163,124,.25);
+}
+.avatar img,.avatar .ph{
+  width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;
+  background:#2e221c;
+}
+.avatar .ph{
+  display:grid;place-items:center;
+  font-family:"Cormorant Garamond",serif;font-size:44px;font-weight:600;color:var(--gold-2);
+}
+.name{
+  font-family:"Cormorant Garamond",serif;
+  font-size:34px;font-weight:600;letter-spacing:.3px;line-height:1.1;
+}
+.name em{font-style:italic;color:var(--gold-2)}
+.role{
+  margin-top:6px;font-size:12.5px;font-weight:600;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--gold);
+}
+.bio{
+  margin:14px auto 0;max-width:340px;font-size:15px;color:var(--muted);
+}
+.bio strong{color:var(--text);font-weight:600}
+
+/* ---------- prova social ---------- */
+.proof{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:8px;
+  margin:22px 0 0;
+}
+.proof div{
+  background:var(--card);border:1px solid var(--card-border);
+  border-radius:14px;padding:12px 6px;text-align:center;
+}
+.proof b{
+  display:block;font-family:"Cormorant Garamond",serif;
+  font-size:26px;line-height:1;color:var(--gold-2);font-weight:600;
+}
+.proof span{display:block;margin-top:4px;font-size:11px;color:var(--muted);line-height:1.25}
+
+/* ---------- CTA principal ---------- */
+.cta{
+  display:flex;align-items:center;gap:14px;
+  margin:22px 0 0;padding:16px 18px;
+  background:linear-gradient(135deg,#2ee07a,var(--wa) 45%,var(--wa-dark));
+  color:#06230f;border-radius:var(--radius);
+  box-shadow:0 14px 34px rgba(37,211,102,.28);
+  position:relative;overflow:hidden;
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.cta:active{transform:scale(.985)}
+.cta::after{ /* brilho que passa */
+  content:"";position:absolute;top:-60%;left:-40%;width:40%;height:220%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.28),transparent);
+  transform:rotate(18deg);animation:shine 4s ease-in-out infinite;
+}
+@keyframes shine{0%,60%{left:-40%}100%{left:130%}}
+.cta .ico{
+  flex:0 0 48px;width:48px;height:48px;border-radius:14px;
+  background:rgba(255,255,255,.22);display:grid;place-items:center;
+}
+.cta .ico svg{width:28px;height:28px;fill:#06230f}
+.cta .txt{flex:1;min-width:0}
+.cta .txt b{display:block;font-size:17px;font-weight:700;line-height:1.2}
+.cta .txt span{display:block;font-size:12.5px;opacity:.85;margin-top:2px}
+.cta .arrow{flex:0 0 auto;font-size:22px;opacity:.7}
+
+.hint{
+  margin-top:10px;text-align:center;font-size:12px;color:var(--muted);
+  display:flex;align-items:center;justify-content:center;gap:6px;
+}
+.hint .dot{width:7px;height:7px;border-radius:50%;background:var(--wa);
+  box-shadow:0 0 0 0 rgba(37,211,102,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 8px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+
+/* ---------- seções ---------- */
+.sec{margin-top:30px}
+.sec h2{
+  font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--muted);text-align:center;margin-bottom:12px;
+}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.chip{
+  font-size:13px;padding:8px 13px;border-radius:999px;
+  background:var(--card);border:1px solid var(--card-border);color:var(--text);
+}
+.chip::before{content:"✦ ";color:var(--gold);font-size:10px}
+
+.links{display:grid;gap:10px}
+.link{
+  display:flex;align-items:center;gap:14px;padding:15px 16px;
+  background:var(--card);border:1px solid var(--card-border);
+  border-radius:var(--radius);
+  transition:background .15s ease,border-color .15s ease,transform .15s ease;
+}
+.link:hover{background:rgba(255,255,255,.07);border-color:rgba(201,163,124,.45)}
+.link:active{transform:scale(.985)}
+.link .ico{
+  flex:0 0 42px;width:42px;height:42px;border-radius:12px;
+  display:grid;place-items:center;
+  background:rgba(201,163,124,.14);color:var(--gold-2);
+}
+.link .ico svg{width:21px;height:21px;fill:currentColor}
+.link .txt{flex:1;min-width:0}
+.link .txt b{display:block;font-size:15px;font-weight:600}
+.link .txt span{display:block;font-size:12.5px;color:var(--muted);margin-top:1px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.link .arrow{color:var(--muted);opacity:.6}
+.link.featured{border-color:rgba(201,163,124,.5);
+  background:linear-gradient(135deg,rgba(201,163,124,.16),rgba(201,163,124,.05))}
+.link .txt b .tag{
+  display:inline-block;vertical-align:middle;margin-left:4px;
+  font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:#1b1411;background:var(--gold-2);padding:3px 7px;border-radius:6px;
+}
+
+/* ---------- depoimento ---------- */
+.quote{
+  margin-top:30px;padding:20px 20px 18px;border-radius:var(--radius);
+  background:var(--card);border:1px solid var(--card-border);text-align:center;
+}
+.quote p{
+  font-family:"Cormorant Garamond",serif;font-style:italic;
+  font-size:19px;line-height:1.35;color:var(--text);
+}
+.quote small{display:block;margin-top:10px;font-size:12px;color:var(--muted);letter-spacing:.04em}
+
+/* ---------- rodapé ---------- */
+.foot{
+  margin-top:30px;text-align:center;font-size:12px;color:var(--muted);line-height:1.7;
+}
+.foot a{color:var(--gold-2)}
+
+/* ---------- barra fixa (mobile) ---------- */
+.sticky{
+  position:fixed;left:0;right:0;bottom:0;z-index:50;
+  padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+  background:linear-gradient(180deg,rgba(27,20,17,0) 0%,rgba(27,20,17,.92) 35%,var(--bg) 100%);
+  transform:translateY(110%);transition:transform .25s ease;
+}
+.sticky.show{transform:translateY(0)}
+.sticky a{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  max-width:460px;margin:0 auto;padding:14px;border-radius:14px;
+  background:var(--wa);color:#06230f;font-weight:700;font-size:15px;
+  box-shadow:0 10px 26px rgba(37,211,102,.3);
+}
+.sticky a svg{width:22px;height:22px;fill:#06230f}
+
+@media (min-width:720px){
+  .wrap{padding-top:48px}
+  .sticky{display:none}
+  .wrap{padding-bottom:48px}
+}
+@media (prefers-reduced-motion:reduce){
+  .cta::after,.hint .dot{animation:none}
+}
+</style>
+</head>
+<body>
+
+<main class="wrap">
+
+  <!-- ===== CABEÇALHO ===== -->
+  <header class="header">
+    <div class="avatar">
+      <!-- Troque pelo caminho da foto da Marina (ex.: foto.jpg na mesma pasta).
+           Enquanto não houver foto, aparece a inicial. -->
+      <div class="ph" aria-hidden="true">M</div>
+      <!-- <img src="foto.jpg" alt="Marina França"> -->
+    </div>
+    <h1 class="name">Marina <em>França</em></h1>
+    <p class="role">Dermopigmentação Paramédica</p>
+    <p class="bio">
+      Camuflagem de <strong>cicatrizes</strong>, <strong>estrias</strong> e manchas com
+      técnica avançada e avaliação individualizada. Resultado natural, seguro e discreto.
+    </p>
+  </header>
+
+  <!-- ===== PROVA SOCIAL ===== -->
+  <section class="proof" aria-label="Credenciais">
+    <div><b>+8</b><span>anos de<br>experiência</span></div>
+    <div><b>+14</b><span>especializações<br>na área</span></div>
+    <div><b>SP</b><span>atendimento<br>em Barra Funda</span></div>
+  </section>
+
+  <!-- ===== CTA PRINCIPAL ===== -->
+  <a class="cta js-wa" href="#" rel="noopener" data-cta="principal">
+    <span class="ico" aria-hidden="true">
+      <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2m0 1.67c4.55 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24-1.49 0-2.95-.4-4.21-1.17l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.26-8.24M8.53 7.33c-.16 0-.43.06-.66.31-.22.25-.87.86-.87 2.07 0 1.22.89 2.39 1 2.56.14.17 1.76 2.67 4.25 3.73.59.27 1.05.42 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.16-.48-.27-.25-.14-1.47-.74-1.69-.82-.23-.08-.37-.12-.56.12-.16.25-.64.81-.78.97-.15.17-.29.19-.53.07-.26-.13-1.06-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.12-.24-.01-.39.11-.5.11-.11.27-.29.37-.44.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.11-.56-1.35-.77-1.84-.2-.48-.4-.42-.56-.43-.14 0-.3-.01-.47-.01"/></svg>
+    </span>
+    <span class="txt">
+      <b>Agendar minha avaliação</b>
+      <span>Pelo WhatsApp · envie fotos do seu caso</span>
+    </span>
+    <span class="arrow" aria-hidden="true">›</span>
+  </a>
+  <p class="hint"><span class="dot" aria-hidden="true"></span> Atendimento somente com hora marcada</p>
+
+  <!-- ===== SERVIÇOS ===== -->
+  <section class="sec" aria-label="Procedimentos">
+    <h2>O que eu camuflo</h2>
+    <div class="chips">
+      <span class="chip">Cicatrizes</span>
+      <span class="chip">Estrias</span>
+      <span class="chip">Manchas</span>
+      <span class="chip">Queimaduras</span>
+      <span class="chip">Aréolas</span>
+      <span class="chip">Pós-cirúrgico</span>
+    </div>
+  </section>
+
+  <!-- ===== LINKS ===== -->
+  <section class="sec" aria-label="Links">
+    <h2>Conheça mais</h2>
+    <nav class="links">
+
+      <a class="link featured" href="https://marinacamuflagem.com.br/" data-utm="1">
+        <span class="ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m6.93 6h-2.95a15.7 15.7 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.93 8M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14A7.9 7.9 0 0 1 4 12c0-.69.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A8 8 0 0 1 5.08 16m2.95-8H5.08a8 8 0 0 1 4.33-3.56A15.7 15.7 0 0 0 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"/></svg>
+        </span>
+        <span class="txt">
+          <b>Site oficial <span class="tag">antes e depois</span></b>
+          <span>Resultados, técnica e como funciona a avaliação</span>
+        </span>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+
+      <a class="link js-ig" href="#" rel="noopener">
+        <span class="ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10m0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6"/></svg>
+        </span>
+        <span class="txt">
+          <b>Instagram</b>
+          <span>Casos reais, bastidores e dicas de cuidado</span>
+        </span>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+
+      <a class="link" href="https://marinacamuflagem.com.br/quem-somos/" data-utm="1">
+        <span class="ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/></svg>
+        </span>
+        <span class="txt">
+          <b>Quem é a Marina</b>
+          <span>Certificação internacional · estudante de medicina</span>
+        </span>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+
+      <a class="link" href="https://marinacamuflagem.com.br/" data-utm="1" data-utm-content="curso">
+        <span class="ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9zM5 13.18v4L12 21l7-3.82v-4L12 17z"/></svg>
+        </span>
+        <span class="txt">
+          <b>Curso de extensão universitária</b>
+          <span>Para profissionais que querem aprender a técnica</span>
+        </span>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+
+      <a class="link" href="https://www.google.com/maps/search/?api=1&query=Av.+Ordem+e+Progresso%2C+157+-+Conj+308%2C+Barra+Funda%2C+S%C3%A3o+Paulo+-+SP" rel="noopener" target="_blank">
+        <span class="ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7m0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5"/></svg>
+        </span>
+        <span class="txt">
+          <b>Como chegar</b>
+          <span>Av. Ordem e Progresso, 157 · Conj. 308 · Barra Funda, SP</span>
+        </span>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+
+    </nav>
+  </section>
+
+  <!-- ===== DEPOIMENTO (edite ou remova) ===== -->
+  <blockquote class="quote">
+    <p>“Cada pele reage de um jeito. Por isso toda camuflagem começa com uma avaliação individual, sem promessa de milagre, com resultado real.”</p>
+    <small>— Marina França</small>
+  </blockquote>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="foot">
+    <a href="mailto:Ipdermopigmentacao@gmail.com">Ipdermopigmentacao@gmail.com</a><br>
+    © <span id="y"></span> Marina França · Dermopigmentação Paramédica
+  </footer>
+
+</main>
+
+<!-- ===== BARRA FIXA (aparece ao rolar, só no celular) ===== -->
+<div class="sticky" id="sticky">
+  <a class="js-wa" href="#" rel="noopener" data-cta="barra">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2m0 1.67c4.55 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24-1.49 0-2.95-.4-4.21-1.17l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.26-8.24M8.53 7.33c-.16 0-.43.06-.66.31-.22.25-.87.86-.87 2.07 0 1.22.89 2.39 1 2.56.14.17 1.76 2.67 4.25 3.73.59.27 1.05.42 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.16-.48-.27-.25-.14-1.47-.74-1.69-.82-.23-.08-.37-.12-.56.12-.16.25-.64.81-.78.97-.15.17-.29.19-.53.07-.26-.13-1.06-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.12-.24-.01-.39.11-.5.11-.11.27-.29.37-.44.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.11-.56-1.35-.77-1.84-.2-.48-.4-.42-.56-.43-.14 0-.3-.01-.47-.01"/></svg>
+    Falar no WhatsApp
+  </a>
+</div>
+
+<script>
+/* ============================================================
+   CONFIGURAÇÃO — só mexa aqui
+   ============================================================ */
+var CONFIG = {
+  whatsapp: '5511968242093',          // DDI + DDD + número, só dígitos
+  instagram: 'marinacamuflagem',      // @ do Instagram (sem o @) — confirme o handle correto
+  // Mensagem padrão. {origem} vira "Instagram", "Facebook" etc. conforme a UTM da campanha.
+  mensagem: 'Olá, Marina! Vim pelo {origem} e quero avaliar meu caso de camuflagem. Posso enviar fotos?'
+};
+
+/* ---------- UTMs: lê da URL e repassa para os links do site ---------- */
+var params = new URLSearchParams(location.search);
+var utm = {};
+['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'].forEach(function(k){
+  if (params.get(k)) utm[k] = params.get(k);
+});
+if (!utm.utm_source) { utm.utm_source = 'links'; utm.utm_medium = 'bio'; }
+
+function withUtm(href, extra){
+  try{
+    var u = new URL(href);
+    Object.keys(utm).forEach(function(k){ u.searchParams.set(k, utm[k]); });
+    if (extra) Object.keys(extra).forEach(function(k){ u.searchParams.set(k, extra[k]); });
+    return u.toString();
+  }catch(e){ return href; }
+}
+document.querySelectorAll('a[data-utm]').forEach(function(a){
+  var extra = a.dataset.utmContent ? {utm_content: a.dataset.utmContent} : null;
+  a.href = withUtm(a.href, extra);
+});
+
+/* ---------- WhatsApp com mensagem contextual ---------- */
+var origens = {ig:'Instagram', instagram:'Instagram', fb:'Facebook', facebook:'Facebook',
+               meta:'Instagram', google:'Google', tiktok:'TikTok', links:'seu link'};
+var origem = origens[(utm.utm_source || '').toLowerCase()] || 'anúncio';
+var texto = CONFIG.mensagem.replace('{origem}', origem);
+if (utm.utm_campaign) texto += ' (ref: ' + utm.utm_campaign + ')';
+var waUrl = 'https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(texto);
+
+document.querySelectorAll('.js-wa').forEach(function(a){
+  a.href = waUrl;
+  a.addEventListener('click', function(){
+    if (window.fbq && window.META_PIXEL_ID !== 'SEU_PIXEL_ID') {
+      fbq('track', 'Contact', {content_name: 'whatsapp_' + (a.dataset.cta || 'cta')});
+    }
+    if (window.gtag) gtag('event', 'whatsapp_click', {cta: a.dataset.cta || 'cta'});
+  });
+});
+
+/* ---------- Instagram ---------- */
+document.querySelectorAll('.js-ig').forEach(function(a){
+  a.href = 'https://instagram.com/' + CONFIG.instagram;
+});
+
+/* ---------- barra fixa aparece quando o CTA principal sai da tela ---------- */
+var sticky = document.getElementById('sticky');
+var mainCta = document.querySelector('.cta');
+if ('IntersectionObserver' in window) {
+  new IntersectionObserver(function(entries){
+    sticky.classList.toggle('show', !entries[0].isIntersecting);
+  }, {threshold: 0}).observe(mainCta);
+}
+
+document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
