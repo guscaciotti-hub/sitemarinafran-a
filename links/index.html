@@ -6,14 +6,14 @@
 <meta name="color-scheme" content="light">
 <title>Marina França · Dermopigmentação Paramédica</title>
 <meta name="description" content="Camuflagem de cicatrizes, estrias, manchas e reconstrução de aréola em São Paulo. Avaliação individual antes de pigmentar. Agende pelo WhatsApp.">
-<meta name="theme-color" content="#f4eee5">
+<meta name="theme-color" content="#ffffff">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:title" content="Marina França · Dermopigmentação Paramédica">
 <meta property="og:description" content="Camuflagem de cicatrizes, estrias e manchas em São Paulo. Avaliação individual, somente com hora marcada. Agende pelo WhatsApp.">
 <!-- Troque pelo domínio final quando o site estiver no ar (precisa ser URL completa). -->
-<meta property="og:image" content="https://sitemarinafran-a.vercel.app/links/assets/og.jpg">
+<meta property="og:image" content="https://marinafranca.vercel.app/links/assets/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" href="/links/assets/favicon.png" type="image/png">
@@ -21,192 +21,145 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400;1,500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-/* Paleta derivada da logo: café, taupe e areia sobre marfim. */
+/* Identidade do site da Marina: fundo branco com a trama, cards marrons, títulos em caixa alta e botão branco em pílula. */
 :root{
-  --ivory:#f4eee5;
-  --paper:#fbf8f2;
-  --sand:#dccbb3;
-  --taupe:#b49a89;
-  --taupe-2:#8f7466;
-  --coffee:#5b4139;
-  --ink:#44302a;
-  --ink-2:#2f211d;
-  --line:rgba(68,48,42,.14);
-  --focus:#8f7466;
-  --r:22px;
+  --brown:#6b4a45;
+  --brown-2:#5a3d38;
+  --brown-3:#4a312d;
+  --green:#0d8f4c;
+  --green-2:#0a7a40;
+  --ink:#3b2a26;
+  --muted:#8a6f68;
+  --cream:#f6f1ec;
+  --line:rgba(107,74,69,.18);
+  --r:26px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{-webkit-text-size-adjust:100%;background:var(--ivory)}
+html{-webkit-text-size-adjust:100%;background:#fff}
 body{
-  font-family:Manrope,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-  background:var(--ivory);
-  color:var(--ink);
-  min-height:100dvh;
-  line-height:1.5;
-  -webkit-font-smoothing:antialiased;
-  overflow-x:hidden;
+  font-family:Poppins,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  background:#fff;color:var(--ink);
+  min-height:100dvh;line-height:1.5;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
 }
-/* textura de papel muito sutil */
+/* trama de pontos do site dela */
 body::before{
   content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
-  background:
-    radial-gradient(120% 60% at 50% 0%, rgba(220,203,179,.55), transparent 70%),
-    linear-gradient(180deg,var(--ivory) 0%,#efe7db 100%);
+  background:#fff url(/links/assets/bg.webp) center top / max(100%,1100px) auto no-repeat;
 }
 a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
-:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+:focus-visible{outline:3px solid var(--brown);outline-offset:3px;border-radius:8px}
 
-.wrap{width:100%;max-width:480px;margin:0 auto;padding:28px 20px 40px}
+.wrap{width:100%;max-width:480px;margin:0 auto;padding:30px 20px 40px}
 
 /* ---------- cabeçalho ---------- */
-.brand{text-align:center;padding-top:6px}
-.logo{width:min(270px,78%);margin:0 auto}
+.brand{text-align:center}
+.logo{width:min(250px,72%);margin:0 auto}
 .logo img{width:100%;height:auto}
 .eyebrow{
-  margin-top:10px;font-size:11.5px;font-weight:700;letter-spacing:.18em;
-  text-transform:uppercase;color:var(--taupe-2);
+  margin-top:16px;font-size:11px;font-weight:600;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--brown);
 }
 .intro{
-  margin:16px auto 0;max-width:360px;
-  font-family:Fraunces,Georgia,serif;font-weight:400;font-size:19px;line-height:1.4;
-  color:var(--ink);
+  margin:12px auto 0;max-width:360px;
+  font-family:"Playfair Display",Georgia,serif;font-style:italic;font-weight:400;
+  font-size:18px;line-height:1.45;color:var(--ink);
 }
-.intro em{font-style:italic;color:var(--coffee)}
+.intro strong{font-style:normal;font-weight:600;color:var(--brown)}
 
 /* ---------- credenciais ---------- */
 .proof{
   display:grid;grid-template-columns:repeat(3,1fr);
-  margin:24px 0 0;padding:16px 0;
+  margin:22px 0 0;padding:14px 0;
   border-top:1px solid var(--line);border-bottom:1px solid var(--line);
 }
 .proof div{text-align:center;padding:0 6px;position:relative}
-.proof div + div::before{
-  content:"";position:absolute;left:0;top:10%;height:80%;width:1px;background:var(--line);
-}
-.proof b{
-  display:block;font-family:Fraunces,Georgia,serif;font-weight:500;
-  font-size:26px;line-height:1;color:var(--ink);
-}
-.proof span{display:block;margin-top:6px;font-size:11px;line-height:1.3;color:var(--taupe-2);font-weight:600}
+.proof div + div::before{content:"";position:absolute;left:0;top:12%;height:76%;width:1px;background:var(--line)}
+.proof b{display:block;font-family:"Playfair Display",Georgia,serif;font-weight:600;font-size:24px;line-height:1;color:var(--brown)}
+.proof span{display:block;margin-top:5px;font-size:10.5px;line-height:1.3;color:var(--muted);font-weight:500}
 
 /* ---------- rótulo de seção ---------- */
 .label{
   display:flex;align-items:center;gap:12px;
-  margin:28px 0 12px;font-size:11.5px;font-weight:700;letter-spacing:.16em;
-  text-transform:uppercase;color:var(--taupe-2);
+  margin:26px 0 12px;font-size:12.5px;font-weight:600;letter-spacing:.02em;
+  color:var(--brown);text-align:center;
 }
 .label::before,.label::after{content:"";flex:1;height:1px;background:var(--line)}
-.label:first-of-type{margin-top:30px}
 
-/* ---------- cartões ---------- */
-.list{display:grid;gap:10px}
+/* ---------- cards ---------- */
+.list{display:grid;gap:12px}
 .card{
   position:relative;display:flex;align-items:center;gap:14px;
-  min-height:76px;padding:16px 16px 16px 18px;
-  background:var(--paper);border:1px solid var(--line);border-radius:var(--r);
-  box-shadow:0 1px 0 rgba(68,48,42,.04), 0 10px 30px -18px rgba(68,48,42,.35);
-  transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  min-height:104px;padding:16px 16px 16px 16px;
+  background:linear-gradient(135deg,var(--brown) 0%,var(--brown-2) 100%);
+  color:#fff;border-radius:var(--r);overflow:hidden;
+  box-shadow:0 14px 30px -16px rgba(74,49,45,.55);
+  transition:transform .18s ease, box-shadow .18s ease;
 }
-.card:hover{transform:translateY(-1px);border-color:rgba(68,48,42,.28);
-  box-shadow:0 1px 0 rgba(68,48,42,.04), 0 16px 34px -18px rgba(68,48,42,.45)}
+.card:hover{transform:translateY(-1px);box-shadow:0 18px 34px -16px rgba(74,49,45,.65)}
 .card:active{transform:translateY(0) scale(.992)}
-.card .ico{
-  flex:0 0 46px;width:46px;height:46px;border-radius:50%;
-  display:grid;place-items:center;
-  background:var(--sand);color:var(--ink);
-}
-.card .ico svg{width:22px;height:22px;fill:currentColor}
-.card .ico img{width:100%;height:100%;object-fit:contain;display:block}
-.card .ico.raw{background:transparent}               /* selo e logos com forma própria */
-.card .ico.dark{background:var(--ink);padding:9px}    /* logo branco sobre café */
-.card .ico.pad{padding:7px}
-.card .duo{flex:0 0 auto;display:flex;gap:4px}
-.card .duo .ico{flex-basis:44px;width:44px;height:44px}
+.card.green{background:linear-gradient(135deg,var(--green) 0%,var(--green-2) 100%);box-shadow:0 14px 30px -16px rgba(10,122,64,.6)}
 
-/* cartões com foto da Marina (extensão e mentoria) */
-.card.photo{min-height:136px;padding-left:0;overflow:hidden}
+.card .ico{
+  flex:0 0 60px;width:60px;height:60px;border-radius:50%;
+  display:grid;place-items:center;background:rgba(255,255,255,.14);
+}
+.card .ico svg{width:30px;height:30px;fill:#fff}
+.card .ico img{width:100%;height:100%;object-fit:contain;display:block}
+.card .ico.raw{background:transparent}
+.card .ico.pad{padding:9px;background:#fff}
+.card .duo{flex:0 0 auto;display:flex;flex-direction:column;gap:6px}
+.card .duo .ico{flex-basis:auto;width:48px;height:48px}
+.card .duo .ico.pad{padding:7px}
+
+.card .txt{flex:1;min-width:0}
+.card .title{
+  display:block;font-weight:700;font-size:15px;line-height:1.25;
+  letter-spacing:.02em;text-transform:uppercase;color:#fff;
+}
+.card .sub{display:block;margin-top:3px;font-size:12px;line-height:1.35;color:rgba(255,255,255,.78)}
+.card .pill{
+  display:inline-block;margin-top:10px;padding:8px 18px;border-radius:999px;
+  background:#fff;color:var(--brown-3);font-weight:600;font-size:13px;line-height:1.2;
+  box-shadow:0 6px 14px -6px rgba(0,0,0,.35);
+}
+.card.green .pill{color:var(--green-2)}
+
+/* cards com foto da Marina (extensão e mentoria) */
+.card.photo{min-height:150px;padding-left:0}
 .card.photo .pic{
-  flex:0 0 112px;align-self:stretch;position:relative;margin:-16px 0;
-  background:linear-gradient(180deg,#e9ddcb 0%,var(--sand) 55%,#cdb79b 100%);
+  flex:0 0 118px;align-self:stretch;position:relative;margin:-16px 0;
+  background:linear-gradient(180deg,#8c6a63 0%,var(--brown-2) 100%);
 }
 .card.photo .pic .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
 .card.photo .pic.cut .ph{object-fit:contain;object-position:center bottom;top:6px;width:120%;left:-10%}
-.card.photo .kicker{letter-spacing:.06em;font-size:10px}
-.card.photo .pic::after{
-  content:"";position:absolute;inset:0;pointer-events:none;
-  background:linear-gradient(90deg,transparent 70%,var(--paper) 100%);
-}
-.card.photo .title{font-size:18px}
-.card.photo .pic .seal{position:absolute;left:auto;top:auto;right:6px;bottom:8px;width:40px;height:auto;z-index:1;
-  filter:drop-shadow(0 2px 4px rgba(0,0,0,.25))}
-.card .txt{flex:1;min-width:0}
-.card .kicker{
-  display:block;font-size:10.5px;font-weight:700;letter-spacing:.14em;
-  text-transform:uppercase;color:var(--taupe-2);margin-bottom:3px;
-}
-.card .title{
-  display:block;font-family:Fraunces,Georgia,serif;font-weight:500;
-  font-size:20px;line-height:1.15;color:var(--ink);letter-spacing:-.005em;
-}
-.card .sub{display:block;margin-top:4px;font-size:13px;line-height:1.35;color:var(--taupe-2)}
-.card .go{
-  flex:0 0 auto;width:34px;height:34px;border-radius:50%;
-  display:grid;place-items:center;border:1px solid var(--line);color:var(--ink);
-  transition:background .18s ease,color .18s ease;
-}
-.card .go svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.card:hover .go{background:var(--ink);color:var(--paper)}
-
-/* cartões principais: café sólido */
-.card.primary{
-  background:linear-gradient(160deg,var(--coffee) 0%,var(--ink) 60%,var(--ink-2) 100%);
-  border-color:transparent;color:var(--paper);
-  box-shadow:0 18px 40px -16px rgba(47,33,29,.6);
-}
-.card.primary .ico{background:rgba(255,255,255,.12);color:var(--sand)}
-.card.primary .kicker{color:var(--sand)}
-.card.primary .title{color:var(--paper)}
-.card.primary .sub{color:rgba(251,248,242,.72)}
-.card.primary .go{border-color:rgba(255,255,255,.28);color:var(--paper)}
-.card.primary:hover .go{background:var(--sand);color:var(--ink)}
-.card.hero{min-height:96px;padding:22px 18px 22px 20px}
-.card.hero .ico{flex-basis:54px;width:54px;height:54px}
-.card.hero .ico svg{width:26px;height:26px}
-.card.hero .title{font-size:24px}
-
-/* selo pequeno (MEC) */
-.badge{
-  display:inline-flex;align-items:center;gap:5px;vertical-align:middle;margin-left:6px;
-  font-family:Manrope,sans-serif;font-size:9.5px;font-weight:800;letter-spacing:.12em;
-  text-transform:uppercase;color:var(--ink);background:var(--sand);
-  padding:3px 7px;border-radius:999px;
-}
+.card.photo .pic::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,transparent 72%,var(--brown-2) 100%)}
+.card.photo .pic .seal{position:absolute;left:auto;top:auto;right:6px;bottom:8px;width:42px;height:auto;z-index:1;filter:drop-shadow(0 2px 4px rgba(0,0,0,.35))}
 
 /* ---------- nota ---------- */
 .note{
-  margin-top:22px;padding:18px 20px;border-radius:var(--r);
-  background:rgba(220,203,179,.35);border:1px solid var(--line);
-  font-size:13.5px;line-height:1.55;color:var(--ink);
+  margin-top:22px;padding:16px 18px;border-radius:20px;
+  background:var(--cream);border:1px solid var(--line);
+  font-size:13px;line-height:1.55;color:var(--ink);
 }
-.note strong{font-weight:700}
+.note strong{font-weight:600;color:var(--brown)}
 
 /* ---------- rodapé ---------- */
-.foot{margin-top:30px;text-align:center;font-size:13px;color:var(--taupe-2);line-height:1.7}
-.foot .addr{color:var(--ink);font-weight:600}
-.foot a:hover{color:var(--ink)}
+.foot{margin-top:28px;text-align:center;font-size:12.5px;color:var(--muted);line-height:1.7}
+.foot .addr{color:var(--ink);font-weight:500}
+.foot a:hover{color:var(--brown)}
 .social{display:flex;justify-content:center;gap:10px;margin:14px 0 16px}
 .social a{
   width:44px;height:44px;border-radius:50%;display:grid;place-items:center;
-  border:1px solid var(--line);color:var(--ink);background:var(--paper);
-  transition:background .18s ease,color .18s ease;
+  background:var(--brown);color:#fff;transition:background .18s ease;
 }
-.social a:hover{background:var(--ink);color:var(--paper)}
+.social a:hover{background:var(--brown-3)}
 .social svg{width:19px;height:19px;fill:currentColor}
-.copy{margin-top:8px;font-size:11.5px;letter-spacing:.04em}
+.copy{margin-top:8px;font-size:11px;letter-spacing:.03em}
 
 @media (min-width:720px){.wrap{padding-top:56px;padding-bottom:64px}}
 @media (prefers-reduced-motion:reduce){
@@ -223,10 +176,10 @@ img{display:block;max-width:100%}
     <h1 class="logo">
       <img src="/links/assets/logo.png" alt="Marina França · Dermopigmentação Paramédica" width="720" height="340">
     </h1>
-    <p class="eyebrow">Especialista em Dermopigmentação Paramédica</p>
+    <p class="eyebrow">Dermopigmentação Paramédica</p>
     <p class="intro">
       Camuflagem de cicatrizes, estrias, manchas e reconstrução de aréola.
-      A pele é <em>avaliada e preparada</em> antes de qualquer pigmentação,
+      A pele é <strong>avaliada e preparada</strong> antes de qualquer pigmentação,
       para disfarçar, uniformizar e devolver a confiança.
     </p>
   </header>
@@ -242,28 +195,26 @@ img{display:block;max-width:100%}
   <p class="label" id="atendimento">Toque no botão de seu interesse</p>
   <nav class="list" aria-label="Atendimento">
 
-    <a class="card primary hero" href="#" data-wa="duvida" rel="noopener">
+    <a class="card green" href="#" data-wa="duvida" rel="noopener">
       <span class="ico" aria-hidden="true">
         <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2m0 1.67c4.55 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24-1.49 0-2.95-.4-4.21-1.17l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.26-8.24M8.53 7.33c-.16 0-.43.06-.66.31-.22.25-.87.86-.87 2.07 0 1.22.89 2.39 1 2.56.14.17 1.76 2.67 4.25 3.73.59.27 1.05.42 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.16-.48-.27-.25-.14-1.47-.74-1.69-.82-.23-.08-.37-.12-.56.12-.16.25-.64.81-.78.97-.15.17-.29.19-.53.07-.26-.13-1.06-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.12-.24-.01-.39.11-.5.11-.11.27-.29.37-.44.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.11-.56-1.35-.77-1.84-.2-.48-.4-.42-.56-.43-.14 0-.3-.01-.47-.01"/></svg>
       </span>
       <span class="txt">
-        <span class="kicker">WhatsApp</span>
         <span class="title">Você precisa de ajuda?</span>
-        <span class="sub">Fale conosco e tire suas dúvidas</span>
+        <span class="sub">Tire suas dúvidas pelo WhatsApp</span>
+        <span class="pill">Fale conosco</span>
       </span>
-      <span class="go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
     </a>
 
-    <a class="card primary" href="#" data-agenda rel="noopener" target="_blank">
+    <a class="card" href="#" data-agenda rel="noopener" target="_blank">
       <span class="ico" aria-hidden="true">
-        <svg viewBox="0 0 24 24"><path d="M7 2h2v2h6V2h2v2h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2zM5 9v11h14V9zm2 2h3v3H7z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M7 2h2v2h6V2h2v2h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2zM5 9v11h14V9zm5.6 9-3.1-3.1 1.4-1.4 1.7 1.7 4.1-4.1 1.4 1.4z"/></svg>
       </span>
       <span class="txt">
-        <span class="kicker">Agenda online</span>
         <span class="title">Agende seu horário</span>
         <span class="sub">Consulta avaliativa, somente com hora marcada</span>
+        <span class="pill">Agende</span>
       </span>
-      <span class="go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
     </a>
 
     <a class="card" href="https://marinacamuflagem.com.br/" data-utm="1" rel="noopener">
@@ -271,11 +222,10 @@ img{display:block;max-width:100%}
         <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20m6.93 6h-2.95a15.7 15.7 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.93 8M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14A7.9 7.9 0 0 1 4 12c0-.69.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A8 8 0 0 1 5.08 16m2.95-8H5.08a8 8 0 0 1 4.33-3.56A15.7 15.7 0 0 0 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"/></svg>
       </span>
       <span class="txt">
-        <span class="kicker">Site</span>
         <span class="title">Acesse o nosso site</span>
         <span class="sub">Procedimentos, resultados e a história da Marina</span>
+        <span class="pill">Acesse</span>
       </span>
-      <span class="go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
     </a>
   </nav>
 
@@ -289,11 +239,10 @@ img{display:block;max-width:100%}
         <img class="seal" src="/links/assets/selo-mec.png" alt="" width="178" height="220">
       </span>
       <span class="txt">
-        <span class="kicker">Reconhecida pelo MEC</span>
         <span class="title">Extensão Universitária em Dermopigmentação</span>
-        <span class="sub">Saber mais pelo WhatsApp</span>
+        <span class="sub">Reconhecida pelo MEC</span>
+        <span class="pill">Saber mais</span>
       </span>
-      <span class="go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
     </a>
 
     <a class="card photo" href="#" data-wa="mentoria" rel="noopener">
@@ -302,11 +251,10 @@ img{display:block;max-width:100%}
         <img class="seal" src="/links/assets/selo-mec.png" alt="" width="178" height="220">
       </span>
       <span class="txt">
-        <span class="kicker">Reconhecida pelo MEC</span>
         <span class="title">Mentoria ao Vivo em Dermopigmentação</span>
-        <span class="sub">Saber mais pelo WhatsApp</span>
+        <span class="sub">Reconhecida pelo MEC</span>
+        <span class="pill">Saber mais</span>
       </span>
-      <span class="go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
     </a>
   </nav>
 
@@ -320,23 +268,21 @@ img{display:block;max-width:100%}
         <span class="ico pad"><img src="/links/assets/vtv.png" alt="" width="105" height="166"></span>
       </span>
       <span class="txt">
-        <span class="kicker">SBT · VTV</span>
         <span class="title">Assista à reportagem</span>
-        <span class="sub">Ver o vídeo</span>
+        <span class="sub">SBT · VTV</span>
+        <span class="pill">Ver o vídeo</span>
       </span>
-      <span class="go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
     </a>
 
     <a class="card" href="#" data-link="unisa" rel="noopener" target="_blank">
-      <span class="ico dark" aria-hidden="true">
+      <span class="ico raw" aria-hidden="true">
         <img src="/links/assets/unisa.png" alt="" width="305" height="125">
       </span>
       <span class="txt">
-        <span class="kicker">UNISA · Universidade Santo Amaro</span>
         <span class="title">Entrevista com Marina França</span>
-        <span class="sub">Ver o vídeo</span>
+        <span class="sub">UNISA · Universidade Santo Amaro</span>
+        <span class="pill">Ver o vídeo</span>
       </span>
-      <span class="go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
     </a>
   </nav>
 
