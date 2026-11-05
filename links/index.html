@@ -138,6 +138,11 @@ img{display:block;max-width:100%}
 .card.photo .pic .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
 .card.photo .pic.cut .ph{object-fit:contain;object-position:center bottom;top:6px;width:120%;left:-10%}
 .card.photo .pic::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,transparent 72%,var(--brown-2) 100%)}
+.card.photo .pic.tv{flex-basis:136px}
+.card.photo .pic.tv .ph{object-position:62% center}
+.card .logos{display:flex;align-items:center;gap:6px;margin-top:6px}
+.card .logos img{width:30px;height:30px;object-fit:contain;border-radius:50%}
+.card .logos img.pad{background:#fff;padding:4px}
 .card.photo .pic .seal{position:absolute;left:auto;top:auto;right:6px;bottom:8px;width:42px;height:auto;z-index:1;filter:drop-shadow(0 2px 4px rgba(0,0,0,.35))}
 
 /* ---------- nota ---------- */
@@ -262,14 +267,16 @@ img{display:block;max-width:100%}
   <p class="label" id="midia">Na mídia</p>
   <nav class="list" aria-label="Marina na mídia">
 
-    <a class="card" href="#" data-link="reportagem" rel="noopener" target="_blank">
-      <span class="duo" aria-hidden="true">
-        <span class="ico raw"><img src="/links/assets/sbt.png" alt="" width="220" height="220"></span>
-        <span class="ico pad"><img src="/links/assets/vtv.png" alt="" width="105" height="166"></span>
+    <a class="card photo" href="#" data-link="reportagem" rel="noopener" target="_blank">
+      <span class="pic tv" aria-hidden="true">
+        <img class="ph" src="/links/assets/reportagem.webp" alt="" width="420" height="240">
       </span>
       <span class="txt">
         <span class="title">Assista à reportagem</span>
-        <span class="sub">SBT · VTV</span>
+        <span class="logos" aria-label="SBT e VTV">
+          <img src="/links/assets/sbt.png" alt="SBT" width="220" height="220">
+          <img class="pad" src="/links/assets/vtv.png" alt="VTV" width="105" height="166">
+        </span>
         <span class="pill">Ver o vídeo</span>
       </span>
     </a>
