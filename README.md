@@ -6,7 +6,7 @@ HTML, CSS e JavaScript puros, em um único arquivo. Sem build.
 ```
 vercel.json          <- redireciona / para /links e define cabeçalhos
 links/index.html     <- a página
-links/assets/        <- logo.png, favicon.png, og.jpg
+links/assets/        <- logo, retrato, favicon, selos (MEC, SBT, VTV, UNISA) e og.jpg
 README.md
 ```
 

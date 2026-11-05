@@ -64,14 +64,19 @@ img{display:block;max-width:100%}
 
 /* ---------- cabeçalho ---------- */
 .brand{text-align:center;padding-top:6px}
-.logo{width:min(250px,72%);margin:0 auto 18px}
+.logo{width:min(230px,66%);margin:0 auto}
 .logo img{width:100%;height:auto}
-/* fallback em texto enquanto a logo não é enviada */
-.wordmark{
-  font-family:Fraunces,Georgia,serif;font-weight:500;font-size:40px;line-height:1;
-  color:var(--ink);letter-spacing:-.01em;
+/* retrato em arco */
+.portrait{
+  width:176px;height:214px;margin:22px auto 0;position:relative;
+  border-radius:88px 88px 28px 28px;overflow:hidden;
+  background:linear-gradient(180deg,#e7dac6 0%,var(--sand) 60%,#cdb79b 100%);
+  box-shadow:inset 0 0 0 1px rgba(68,48,42,.12), 0 18px 36px -18px rgba(68,48,42,.5);
 }
-.wordmark em{font-style:italic;font-weight:400;color:var(--coffee)}
+.portrait img{
+  position:absolute;left:50%;top:10px;transform:translateX(-50%);
+  width:182px;height:auto;
+}
 .eyebrow{
   margin-top:10px;font-size:11.5px;font-weight:700;letter-spacing:.18em;
   text-transform:uppercase;color:var(--taupe-2);
@@ -126,6 +131,12 @@ img{display:block;max-width:100%}
   background:var(--sand);color:var(--ink);
 }
 .card .ico svg{width:22px;height:22px;fill:currentColor}
+.card .ico img{width:100%;height:100%;object-fit:contain;display:block}
+.card .ico.raw{background:transparent}               /* selo e logos com forma própria */
+.card .ico.dark{background:var(--ink);padding:9px}    /* logo branco sobre café */
+.card .ico.pad{padding:7px}
+.card .duo{flex:0 0 auto;display:flex;gap:4px}
+.card .duo .ico{flex-basis:44px;width:44px;height:44px}
 .card .txt{flex:1;min-width:0}
 .card .kicker{
   display:block;font-size:10.5px;font-weight:700;letter-spacing:.14em;
@@ -203,11 +214,13 @@ img{display:block;max-width:100%}
 
   <!-- ===== CABEÇALHO ===== -->
   <header class="brand">
-    <div class="logo" id="logo">
-      <!-- Quando o arquivo da logo estiver em /links/assets/logo.png este bloco é trocado automaticamente. -->
-      <h1 class="wordmark">Marina <em>França</em></h1>
+    <h1 class="logo">
+      <img src="/links/assets/logo.png" alt="Marina França · Dermopigmentação Paramédica" width="720" height="340">
+    </h1>
+    <div class="portrait" aria-hidden="true">
+      <img src="/links/assets/marina.webp" alt="" width="400" height="470">
     </div>
-    <p class="eyebrow">Dermopigmentação Paramédica</p>
+    <p class="eyebrow">Especialista em Dermopigmentação Paramédica</p>
     <p class="intro">
       Camuflagem de cicatrizes, estrias, manchas e reconstrução de aréola.
       A pele é <em>avaliada e preparada</em> antes de qualquer pigmentação,
@@ -268,11 +281,11 @@ img{display:block;max-width:100%}
   <nav class="list" aria-label="Cursos para profissionais">
 
     <a class="card" href="#" data-wa="extensao" rel="noopener">
-      <span class="ico" aria-hidden="true">
-        <svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9zM5 13.18v4L12 21l7-3.82v-4L12 17z"/></svg>
+      <span class="ico raw" aria-hidden="true">
+        <img src="/links/assets/selo-mec.png" alt="" width="178" height="220">
       </span>
       <span class="txt">
-        <span class="kicker">Formação <span class="badge">Reconhecida pelo MEC</span></span>
+        <span class="kicker">Formação · Reconhecida pelo MEC</span>
         <span class="title">Extensão Universitária em Dermopigmentação</span>
         <span class="sub">Saber mais pelo WhatsApp</span>
       </span>
@@ -280,11 +293,11 @@ img{display:block;max-width:100%}
     </a>
 
     <a class="card" href="#" data-wa="mentoria" rel="noopener">
-      <span class="ico" aria-hidden="true">
-        <svg viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8m-7 8a7 7 0 0 1 14 0zm15-9h2v2h-2zm0-4h2v2h-2zm0 8h2v2h-2z"/></svg>
+      <span class="ico raw" aria-hidden="true">
+        <img src="/links/assets/selo-mec.png" alt="" width="178" height="220">
       </span>
       <span class="txt">
-        <span class="kicker">Mentoria <span class="badge">Reconhecida pelo MEC</span></span>
+        <span class="kicker">Mentoria · Reconhecida pelo MEC</span>
         <span class="title">Mentoria ao Vivo em Dermopigmentação</span>
         <span class="sub">Saber mais pelo WhatsApp</span>
       </span>
@@ -297,8 +310,9 @@ img{display:block;max-width:100%}
   <nav class="list" aria-label="Marina na mídia">
 
     <a class="card" href="#" data-link="reportagem" rel="noopener" target="_blank">
-      <span class="ico" aria-hidden="true">
-        <svg viewBox="0 0 24 24"><path d="M21 6H3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2M3 18V8h18v10zM16 2l-4 3-4-3v2l4 3 4-3zm-6 8v6l5-3z"/></svg>
+      <span class="duo" aria-hidden="true">
+        <span class="ico raw"><img src="/links/assets/sbt.png" alt="" width="220" height="220"></span>
+        <span class="ico pad"><img src="/links/assets/vtv.png" alt="" width="105" height="166"></span>
       </span>
       <span class="txt">
         <span class="kicker">SBT · VTV</span>
@@ -309,8 +323,8 @@ img{display:block;max-width:100%}
     </a>
 
     <a class="card" href="#" data-link="unisa" rel="noopener" target="_blank">
-      <span class="ico" aria-hidden="true">
-        <svg viewBox="0 0 24 24"><path d="M12 3a4 4 0 0 1 4 4v5a4 4 0 0 1-8 0V7a4 4 0 0 1 4-4m-7 9h2a5 5 0 0 0 10 0h2a7 7 0 0 1-6 6.92V21h-2v-2.08A7 7 0 0 1 5 12"/></svg>
+      <span class="ico dark" aria-hidden="true">
+        <img src="/links/assets/unisa.png" alt="" width="305" height="125">
       </span>
       <span class="txt">
         <span class="kicker">UNISA · Universidade Santo Amaro</span>
@@ -374,10 +388,7 @@ var CONFIG = {
     instagram: 'https://www.instagram.com/marinafrancaparamedica/',
     facebook:  'https://www.facebook.com/marinafrancaparamedica',
     youtube:   'https://www.youtube.com/@marinafrancaparamedica'
-  },
-
-  // Caminho da logo. Se o arquivo existir, substitui o nome em texto.
-  logo: '/links/assets/logo.png'
+  }
 };
 
 /* ---------- WhatsApp ---------- */
@@ -412,21 +423,6 @@ document.querySelectorAll('a[data-utm]').forEach(function(a){
     a.href = u.toString();
   }catch(e){}
 });
-
-/* ---------- Logo: usa a imagem se ela existir ---------- */
-(function(){
-  var img = new Image();
-  img.alt = 'Marina França · Dermopigmentação Paramédica';
-  img.onload = function(){
-    var box = document.getElementById('logo');
-    box.innerHTML = '';
-    var h1 = document.createElement('h1');
-    h1.style.margin = '0';
-    h1.appendChild(img);
-    box.appendChild(h1);
-  };
-  img.src = CONFIG.logo;
-})();
 
 document.getElementById('y').textContent = new Date().getFullYear();
 </script>
