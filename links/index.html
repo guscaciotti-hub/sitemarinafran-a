@@ -64,19 +64,8 @@ img{display:block;max-width:100%}
 
 /* ---------- cabeçalho ---------- */
 .brand{text-align:center;padding-top:6px}
-.logo{width:min(230px,66%);margin:0 auto}
+.logo{width:min(270px,78%);margin:0 auto}
 .logo img{width:100%;height:auto}
-/* retrato em arco */
-.portrait{
-  width:176px;height:214px;margin:22px auto 0;position:relative;
-  border-radius:88px 88px 28px 28px;overflow:hidden;
-  background:linear-gradient(180deg,#e7dac6 0%,var(--sand) 60%,#cdb79b 100%);
-  box-shadow:inset 0 0 0 1px rgba(68,48,42,.12), 0 18px 36px -18px rgba(68,48,42,.5);
-}
-.portrait img{
-  position:absolute;left:50%;top:10px;transform:translateX(-50%);
-  width:182px;height:auto;
-}
 .eyebrow{
   margin-top:10px;font-size:11.5px;font-weight:700;letter-spacing:.18em;
   text-transform:uppercase;color:var(--taupe-2);
@@ -137,6 +126,23 @@ img{display:block;max-width:100%}
 .card .ico.pad{padding:7px}
 .card .duo{flex:0 0 auto;display:flex;gap:4px}
 .card .duo .ico{flex-basis:44px;width:44px;height:44px}
+
+/* cartões com foto da Marina (extensão e mentoria) */
+.card.photo{min-height:136px;padding-left:0;overflow:hidden}
+.card.photo .pic{
+  flex:0 0 112px;align-self:stretch;position:relative;margin:-16px 0;
+  background:linear-gradient(180deg,#e9ddcb 0%,var(--sand) 55%,#cdb79b 100%);
+}
+.card.photo .pic .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.card.photo .pic.cut .ph{object-fit:contain;object-position:center bottom;top:6px;width:120%;left:-10%}
+.card.photo .kicker{letter-spacing:.06em;font-size:10px}
+.card.photo .pic::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(90deg,transparent 70%,var(--paper) 100%);
+}
+.card.photo .title{font-size:18px}
+.card.photo .pic .seal{position:absolute;left:auto;top:auto;right:6px;bottom:8px;width:40px;height:auto;z-index:1;
+  filter:drop-shadow(0 2px 4px rgba(0,0,0,.25))}
 .card .txt{flex:1;min-width:0}
 .card .kicker{
   display:block;font-size:10.5px;font-weight:700;letter-spacing:.14em;
@@ -217,9 +223,6 @@ img{display:block;max-width:100%}
     <h1 class="logo">
       <img src="/links/assets/logo.png" alt="Marina França · Dermopigmentação Paramédica" width="720" height="340">
     </h1>
-    <div class="portrait" aria-hidden="true">
-      <img src="/links/assets/marina.webp" alt="" width="400" height="470">
-    </div>
     <p class="eyebrow">Especialista em Dermopigmentação Paramédica</p>
     <p class="intro">
       Camuflagem de cicatrizes, estrias, manchas e reconstrução de aréola.
@@ -280,24 +283,26 @@ img{display:block;max-width:100%}
   <p class="label" id="profissionais">Para profissionais</p>
   <nav class="list" aria-label="Cursos para profissionais">
 
-    <a class="card" href="#" data-wa="extensao" rel="noopener">
-      <span class="ico raw" aria-hidden="true">
-        <img src="/links/assets/selo-mec.png" alt="" width="178" height="220">
+    <a class="card photo" href="#" data-wa="extensao" rel="noopener">
+      <span class="pic" aria-hidden="true">
+        <img class="ph" src="/links/assets/marina-extensao.webp" alt="" width="240" height="300">
+        <img class="seal" src="/links/assets/selo-mec.png" alt="" width="178" height="220">
       </span>
       <span class="txt">
-        <span class="kicker">Formação · Reconhecida pelo MEC</span>
+        <span class="kicker">Reconhecida pelo MEC</span>
         <span class="title">Extensão Universitária em Dermopigmentação</span>
         <span class="sub">Saber mais pelo WhatsApp</span>
       </span>
       <span class="go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
     </a>
 
-    <a class="card" href="#" data-wa="mentoria" rel="noopener">
-      <span class="ico raw" aria-hidden="true">
-        <img src="/links/assets/selo-mec.png" alt="" width="178" height="220">
+    <a class="card photo" href="#" data-wa="mentoria" rel="noopener">
+      <span class="pic cut" aria-hidden="true">
+        <img class="ph" src="/links/assets/marina-mentoria.webp" alt="" width="240" height="393">
+        <img class="seal" src="/links/assets/selo-mec.png" alt="" width="178" height="220">
       </span>
       <span class="txt">
-        <span class="kicker">Mentoria · Reconhecida pelo MEC</span>
+        <span class="kicker">Reconhecida pelo MEC</span>
         <span class="title">Mentoria ao Vivo em Dermopigmentação</span>
         <span class="sub">Saber mais pelo WhatsApp</span>
       </span>
